@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Comperi{% endblock %}
+
+{% block nav_haut %}
+<span class="mouvement">Comperi Comperi Comperi Comperi Comperi Comperi Comperi Comperi Comperi Comperi Comperi Comperi&nbsp; </span>
+<span class="mouvement">Comperi Comperi Comperi Comperi Comperi Comperi Comperi Comperi Comperi Comperi Comperi Comperi&nbsp; </span>
+{% endblock %}
+{% block information %}
+{% for message in app.flashes ('message') %}
+<div>{{ message }}</div>
+{% endfor %}
+{% endblock %}
+  
+{% block vinyle %}
+{% endblock %}

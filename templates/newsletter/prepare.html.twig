@@ -1,0 +1,21 @@
+
+{% block title %}Creation de la newsletter{% endblock %}
+
+{% block body %}
+<h1>Ecrivez votre newsletter</h1>
+{{form_start(form)}}
+
+    {{form_row(form.name)}}
+    <p>Contenu</p>
+    <div id="editor">{{form_row(form.content)}}</div>
+    
+
+{{form_end(form)}}
+
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('bundles/fosckeditor/ckeditor.js')}}" defer></script>
+<script src="{{ asset('js/ckeditor.js')}}" defer></script>
+
+{% endblock %}
