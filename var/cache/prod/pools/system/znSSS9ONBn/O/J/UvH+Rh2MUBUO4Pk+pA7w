@@ -1,0 +1,76 @@
+<?php //971e995e13ef75aa5064742752c386a6
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'dpid' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT u0_.id AS id_0, u0_.email AS email_1, u0_.created_at AS created_at_2, u0_.is_rgpd AS is_rgpd_3, u0_.validation_token AS validation_token_4, u0_.is_valid AS is_valid_5 FROM users u0_ WHERE u0_.id IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'entity' => 'App\\Entity\\Newsletters\\Users',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'email_1' => 'email',
+                    'created_at_2' => 'created_at',
+                    'is_rgpd_3' => 'is_rgpd',
+                    'validation_token_4' => 'validation_token',
+                    'is_valid_5' => 'is_valid',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'entity' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'entity',
+                    'email_1' => 'entity',
+                    'created_at_2' => 'entity',
+                    'is_rgpd_3' => 'entity',
+                    'validation_token_4' => 'entity',
+                    'is_valid_5' => 'entity',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Newsletters\\Users',
+                    'email_1' => 'App\\Entity\\Newsletters\\Users',
+                    'created_at_2' => 'App\\Entity\\Newsletters\\Users',
+                    'is_rgpd_3' => 'App\\Entity\\Newsletters\\Users',
+                    'validation_token_4' => 'App\\Entity\\Newsletters\\Users',
+                    'is_valid_5' => 'App\\Entity\\Newsletters\\Users',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
